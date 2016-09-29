@@ -7,6 +7,22 @@
 		<h1>Test jw player</h1>
 		<script src="jwplayer.js"></script>
 		<script>jwplayer.key="CKjOe06GxAOe3Dj9NaWPCQKtqvqQdyFV8z9wsg==";</script>
+		
+		<h2>Test youtube embed</h2>
+		<div id="myElement2">Loading the player...</div>
+		<script type="text/javascript">
+			var playerInstance = jwplayer("myElement2");
+				playerInstance.setup({
+				file: "https://www.youtube.com/watch?v=3amVIeFNhL4",
+				image: "uploads/example2.png",
+				width: 300,
+				height: 200
+			});
+		</script>
+		<br/>
+		
+		<h2>Test local video embed</h2>
+		
 		<div id="myElement">Loading the player...</div>
 		<script type='text/javascript'>
 		  jwplayer("myElement").setup({ 
@@ -18,6 +34,7 @@
 			description: "Video description goes here"
 		  });
 		</script>
+		
     </body>
 	
 </html>
